@@ -1,0 +1,23 @@
+[
+{
+  "model": "devices.location",
+  "pk": 1,
+  "fields": {
+    "name": "Office"
+  }
+},
+{
+  "model": "devices.location",
+  "pk": 2,
+  "fields": {
+    "name": "Garage"
+  }
+},
+{
+  "model": "devices.location",
+  "pk": 3,
+  "fields": {
+    "name": "Greenhouse"
+  }
+}
+]

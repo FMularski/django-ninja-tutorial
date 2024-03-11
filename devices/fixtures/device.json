@@ -1,0 +1,29 @@
+[
+{
+  "model": "devices.device",
+  "pk": "9275d63a-d3e0-474d-8fd8-f38344e9248b",
+  "fields": {
+    "name": "CO2 Sensor",
+    "slug": "co2-sensor",
+    "location": 1
+  }
+},
+{
+  "model": "devices.device",
+  "pk": "c878cfbc-b0ae-4eba-97b0-29391baf9b3d",
+  "fields": {
+    "name": "Temperature Sensor",
+    "slug": "temperature-sensor",
+    "location": 2
+  }
+},
+{
+  "model": "devices.device",
+  "pk": "d23c40be-bc2e-446d-8352-0e178d9ec8db",
+  "fields": {
+    "name": "Proximity Sensor",
+    "slug": "proximity-sensor",
+    "location": 3
+  }
+}
+]
