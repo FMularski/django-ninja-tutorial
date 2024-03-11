@@ -1,4 +1,4 @@
-from ninja import ModelSchema
+from ninja import ModelSchema, Schema
 
 from devices import models
 
@@ -15,3 +15,12 @@ class DeviceSchema(ModelSchema):
     class Meta:
         model = models.Device
         fields = ("id", "name", "slug", "location")
+
+
+class DeviceWriteSchema(Schema):
+    name: str
+    location_id: int | None = None
+
+
+class ErrorSchema(Schema):
+    message: str
