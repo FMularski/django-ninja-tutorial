@@ -1,0 +1,578 @@
+[
+    {
+      "model": "rpg.item",
+      "pk": 1,
+      "fields": {
+        "name": "Sword of Light",
+        "rarity": 1,
+        "boosted_stat": "strength",
+        "value": 200,
+        "character": 1,
+        "icon": "items/sword-of-light.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 2,
+      "fields": {
+        "name": "Cloak of Shadows",
+        "rarity": 2,
+        "boosted_stat": "agility",
+        "value": 150,
+        "character": 2,
+        "icon": "items/cloak-of-shadows.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 3,
+      "fields": {
+        "name": "Staff of Ages",
+        "rarity": 3,
+        "boosted_stat": "intelligence",
+        "value": 250,
+        "character": 3,
+        "icon": "items/staff-of-ages.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 4,
+      "fields": {
+        "name": "Ring of Power",
+        "rarity": 4,
+        "boosted_stat": "mana",
+        "value": 100,
+        "character": 4,
+        "icon": "items/ring-of-power.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 5,
+      "fields": {
+        "name": "Dagger of Silence",
+        "rarity": 1,
+        "boosted_stat": "agility",
+        "value": 180,
+        "character": 5,
+        "icon": "items/dagger-of-silence.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 6,
+      "fields": {
+        "name": "Helm of Insight",
+        "rarity": 2,
+        "boosted_stat": "intelligence",
+        "value": 220,
+        "character": 6,
+        "icon": "items/helm-of-insight.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 7,
+      "fields": {
+        "name": "Boots of the Windwalker",
+        "rarity": 3,
+        "boosted_stat": "agility",
+        "value": 190,
+        "character": 7,
+        "icon": "items/boots-of-the-windwalker.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 8,
+      "fields": {
+        "name": "Amulet of the Sun",
+        "rarity": 4,
+        "boosted_stat": "strength",
+        "value": 210,
+        "character": 8,
+        "icon": "items/amulet-of-the-sun.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 9,
+      "fields": {
+        "name": "Gauntlets of Strength",
+        "rarity": 1,
+        "boosted_stat": "strength",
+        "value": 160,
+        "character": 9,
+        "icon": "items/gauntlets-of-strength.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 10,
+      "fields": {
+        "name": "Robe of the Archmage",
+        "rarity": 2,
+        "boosted_stat": "intelligence",
+        "value": 240,
+        "character": 10,
+        "icon": "items/robe-of-the-archmage.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 11,
+      "fields": {
+        "name": "Shield of the Ancients",
+        "rarity": 3,
+        "boosted_stat": "strength",
+        "value": 200,
+        "character": 11,
+        "icon": "items/shield-of-the-ancients.png"
+      }
+    },
+    {
+      "model": "rpg.item",
+      "pk": 12,
+      "fields": {
+        "name": "Bow of the Hawk",
+        "rarity": 4,
+        "boosted_stat": "agility",
+        "value": 170,
+        "character": 12,
+        "icon": "items/bow-of-the-hawk.png"
+      }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 13,
+        "fields": {
+        "name": "Crystal Blade",
+        "rarity": 1,
+        "boosted_stat": "strength",
+        "value": 300,
+        "character": 1,
+        "icon": "items/crystal-blade.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 14,
+        "fields": {
+        "name": "Shadow Cloak",
+        "rarity": 2,
+        "boosted_stat": "agility",
+        "value": 250,
+        "character": 2,
+        "icon": "items/shadow-cloak.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 15,
+        "fields": {
+        "name": "Mystic Staff",
+        "rarity": 3,
+        "boosted_stat": "intelligence",
+        "value": 350,
+        "character": 3,
+        "icon": "items/mystic-staff.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 16,
+        "fields": {
+        "name": "Eternal Ring",
+        "rarity": 4,
+        "boosted_stat": "mana",
+        "value": 200,
+        "character": 4,
+        "icon": "items/eternal-ring.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 17,
+        "fields": {
+        "name": "Phoenix Feather",
+        "rarity": 1,
+        "boosted_stat": "agility",
+        "value": 280,
+        "character": 5,
+        "icon": "items/phoenix-feather.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 18,
+        "fields": {
+        "name": "Goblin's Trinket",
+        "rarity": 2,
+        "boosted_stat": "strength",
+        "value": 220,
+        "character": 6,
+        "icon": "items/goblins-trinket.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 19,
+        "fields": {
+        "name": "Wizard's Tome",
+        "rarity": 3,
+        "boosted_stat": "intelligence",
+        "value": 360,
+        "character": 7,
+        "icon": "items/wizards-tome.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 20,
+        "fields": {
+        "name": "Valkyrie Spear",
+        "rarity": 4,
+        "boosted_stat": "strength",
+        "value": 310,
+        "character": 8,
+        "icon": "items/valkyrie-spear.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 21,
+        "fields": {
+        "name": "Draconic Pendant",
+        "rarity": 1,
+        "boosted_stat": "mana",
+        "value": 240,
+        "character": 9,
+        "icon": "items/draconic-pendant.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 22,
+        "fields": {
+        "name": "Elemental Boots",
+        "rarity": 2,
+        "boosted_stat": "agility",
+        "value": 270,
+        "character": 10,
+        "icon": "items/elemental-boots.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 23,
+        "fields": {
+        "name": "Nightshade Poison",
+        "rarity": 3,
+        "boosted_stat": "strength",
+        "value": 230,
+        "character": 11,
+        "icon": "items/nightshade-poison.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 24,
+        "fields": {
+        "name": "Arcane Orb",
+        "rarity": 4,
+        "boosted_stat": "intelligence",
+        "value": 340,
+        "character": 12,
+        "icon": "items/arcane-orb.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 25,
+        "fields": {
+        "name": "Blade of the Fallen",
+        "rarity": 1,
+        "boosted_stat": "strength",
+        "value": 280,
+        "character": 1,
+        "icon": "items/blade-of-the-fallen.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 26,
+        "fields": {
+        "name": "Veil of Midnight",
+        "rarity": 2,
+        "boosted_stat": "agility",
+        "value": 260,
+        "character": 2,
+        "icon": "items/veil-of-midnight.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 27,
+        "fields": {
+        "name": "Orb of the Seer",
+        "rarity": 3,
+        "boosted_stat": "intelligence",
+        "value": 320,
+        "character": 3,
+        "icon": "items/orb-of-the-seer.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 28,
+        "fields": {
+        "name": "Heart of Tarrasque",
+        "rarity": 4,
+        "boosted_stat": "health",
+        "value": 350,
+        "character": 4,
+        "icon": "items/heart-of-tarrasque.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 29,
+        "fields": {
+        "name": "Shadow Amulet",
+        "rarity": 1,
+        "boosted_stat": "agility",
+        "value": 300,
+        "character": 5,
+        "icon": "items/shadow-amulet.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 30,
+        "fields": {
+        "name": "Luminous Gauntlets",
+        "rarity": 2,
+        "boosted_stat": "strength",
+        "value": 270,
+        "character": 6,
+        "icon": "items/luminous-gauntlets.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 31,
+        "fields": {
+        "name": "Cape of Flames",
+        "rarity": 3,
+        "boosted_stat": "mana",
+        "value": 310,
+        "character": 7,
+        "icon": "items/cape-of-flames.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 32,
+        "fields": {
+        "name": "Belt of Giant Strength",
+        "rarity": 4,
+        "boosted_stat": "strength",
+        "value": 290,
+        "character": 8,
+        "icon": "items/belt-of-giant-strength.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 33,
+        "fields": {
+        "name": "Echo Sabre",
+        "rarity": 1,
+        "boosted_stat": "agility",
+        "value": 280,
+        "character": 9,
+        "icon": "items/echo-sabre.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 34,
+        "fields": {
+        "name": "Mantle of Intelligence",
+        "rarity": 2,
+        "boosted_stat": "intelligence",
+        "value": 260,
+        "character": 10,
+        "icon": "items/mantle-of-intelligence.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 35,
+        "fields": {
+        "name": "Boots of Travel",
+        "rarity": 3,
+        "boosted_stat": "agility",
+        "value": 300,
+        "character": 11,
+        "icon": "items/boots-of-travel.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 36,
+        "fields": {
+        "name": "Aegis of the Immortal",
+        "rarity": 4,
+        "boosted_stat": "health",
+        "value": 330,
+        "character": 12,
+        "icon": "items/aegis-of-the-immortal.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 37,
+        "fields": {
+        "name": "Gleaming Halberd",
+        "rarity": 1,
+        "boosted_stat": "strength",
+        "value": 340,
+        "character": 1,
+        "icon": "items/gleaming-halberd.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 38,
+        "fields": {
+        "name": "Band of Enlightenment",
+        "rarity": 2,
+        "boosted_stat": "intelligence",
+        "value": 320,
+        "character": 2,
+        "icon": "items/band-of-enlightenment.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 39,
+        "fields": {
+        "name": "Runeblade",
+        "rarity": 3,
+        "boosted_stat": "agility",
+        "value": 360,
+        "character": 3,
+        "icon": "items/runeblade.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 40,
+        "fields": {
+        "name": "Pendant of Force",
+        "rarity": 4,
+        "boosted_stat": "strength",
+        "value": 300,
+        "character": 4,
+        "icon": "items/pendant-of-force.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 41,
+        "fields": {
+        "name": "Boots of Alacrity",
+        "rarity": 1,
+        "boosted_stat": "agility",
+        "value": 285,
+        "character": 5,
+        "icon": "items/boots-of-alacrity.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 42,
+        "fields": {
+        "name": "Mystic Wrap",
+        "rarity": 2,
+        "boosted_stat": "intelligence",
+        "value": 275,
+        "character": 6,
+        "icon": "items/mystic-wrap.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 43,
+        "fields": {
+        "name": "Sigil of Silence",
+        "rarity": 3,
+        "boosted_stat": "mana",
+        "value": 290,
+        "character": 7,
+        "icon": "items/sigil-of-silence.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 44,
+        "fields": {
+        "name": "Crown of the Depths",
+        "rarity": 4,
+        "boosted_stat": "health",
+        "value": 310,
+        "character": 8,
+        "icon": "items/crown-of-the-depths.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 45,
+        "fields": {
+        "name": "Stormcaller",
+        "rarity": 1,
+        "boosted_stat": "intelligence",
+        "value": 330,
+        "character": 9,
+        "icon": "items/stormcaller.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 46,
+        "fields": {
+        "name": "Void Orb",
+        "rarity": 2,
+        "boosted_stat": "mana",
+        "value": 350,
+        "character": 10,
+        "icon": "items/void-orb.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 47,
+        "fields": {
+        "name": "Wraith Band",
+        "rarity": 3,
+        "boosted_stat": "agility",
+        "value": 265,
+        "character": 11,
+        "icon": "items/wraith-band.png"
+        }
+    },
+    {
+        "model": "rpg.item",
+        "pk": 48,
+        "fields": {
+        "name": "Guardian Greaves",
+        "rarity": 4,
+        "boosted_stat": "health",
+        "value": 280,
+        "character": 12,
+        "icon": "items/guardian-greaves.png"
+        }
+    }   
+  ]

@@ -1,0 +1,35 @@
+[
+    {
+      "model": "rpg.guild",
+      "pk": 1,
+      "fields": {
+        "name": "Dragon Riders",
+        "banner": "banners/dragon-raiders.png"
+      }
+    },
+    {
+        "model": "rpg.guild",
+        "pk": 2,
+        "fields": {
+          "name": "Shadow Seekers",
+          "banner": "banners/shadow-seekers.png"
+        }
+      },
+      {
+        "model": "rpg.guild",
+        "pk": 3,
+        "fields": {
+          "name": "Crystal Guardians",
+          "banner": "banners/crystal-guardians.png"
+        }
+      },
+      {
+        "model": "rpg.guild",
+        "pk": 4,
+        "fields": {
+          "name": "Forest Sentinels",
+          "banner": "banners/forest-sentinels.png"
+        }
+      }
+  ]
+  

@@ -1,0 +1,39 @@
+[
+    {
+      "model": "rpg.rarity",
+      "pk": 1,
+      "fields": {
+        "name": "Common",
+        "grade": 1,
+        "color": "#287d38"
+      }
+    },
+    {
+        "model": "rpg.rarity",
+        "pk": 2,
+        "fields": {
+          "name": "Rare",
+          "grade": 2,
+          "color": "#305bd1"
+        }
+      },
+      {
+        "model": "rpg.rarity",
+        "pk": 3,
+        "fields": {
+          "name": "Epic",
+          "grade": 3,
+          "color": "#631e9c"
+        }
+      },
+      {
+        "model": "rpg.rarity",
+        "pk": 4,
+        "fields": {
+          "name": "Legendary",
+          "grade": 4,
+          "color": "#ed9f32"
+        }
+      }
+  ]
+  

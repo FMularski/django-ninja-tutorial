@@ -1,0 +1,159 @@
+[
+    {
+      "model": "rpg.statistics",
+      "pk": 1,
+      "fields": {
+        "base_health": 100,
+        "base_max_health": 100,
+        "base_mana": 50,
+        "base_max_mana": 50,
+        "base_strength": 10,
+        "base_intelligence": 8,
+        "base_agility": 12
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 2,
+      "fields": {
+        "base_health": 110,
+        "base_max_health": 110,
+        "base_mana": 40,
+        "base_max_mana": 40,
+        "base_strength": 14,
+        "base_intelligence": 7,
+        "base_agility": 9
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 3,
+      "fields": {
+        "base_health": 90,
+        "base_max_health": 90,
+        "base_mana": 60,
+        "base_max_mana": 60,
+        "base_strength": 8,
+        "base_intelligence": 12,
+        "base_agility": 10
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 4,
+      "fields": {
+        "base_health": 120,
+        "base_max_health": 120,
+        "base_mana": 30,
+        "base_max_mana": 30,
+        "base_strength": 16,
+        "base_intelligence": 6,
+        "base_agility": 8
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 5,
+      "fields": {
+        "base_health": 80,
+        "base_max_health": 80,
+        "base_mana": 70,
+        "base_max_mana": 70,
+        "base_strength": 7,
+        "base_intelligence": 15,
+        "base_agility": 11
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 6,
+      "fields": {
+        "base_health": 130,
+        "base_max_health": 130,
+        "base_mana": 20,
+        "base_max_mana": 20,
+        "base_strength": 18,
+        "base_intelligence": 4,
+        "base_agility": 8
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 7,
+      "fields": {
+        "base_health": 85,
+        "base_max_health": 85,
+        "base_mana": 65,
+        "base_max_mana": 65,
+        "base_strength": 9,
+        "base_intelligence": 14,
+        "base_agility": 12
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 8,
+      "fields": {
+        "base_health": 115,
+        "base_max_health": 115,
+        "base_mana": 35,
+        "base_max_mana": 35,
+        "base_strength": 13,
+        "base_intelligence": 10,
+        "base_agility": 7
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 9,
+      "fields": {
+        "base_health": 75,
+        "base_max_health": 75,
+        "base_mana": 75,
+        "base_max_mana": 75,
+        "base_strength": 6,
+        "base_intelligence": 16,
+        "base_agility": 13
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 10,
+      "fields": {
+        "base_health": 125,
+        "base_max_health": 125,
+        "base_mana": 25,
+        "base_max_mana": 25,
+        "base_strength": 17,
+        "base_intelligence": 5,
+        "base_agility": 9
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 11,
+      "fields": {
+        "base_health": 95,
+        "base_max_health": 95,
+        "base_mana": 55,
+        "base_max_mana": 55,
+        "base_strength": 11,
+        "base_intelligence": 13,
+        "base_agility": 10
+      }
+    },
+    {
+      "model": "rpg.statistics",
+      "pk": 12,
+      "fields": {
+        "base_health": 105,
+        "base_max_health": 105,
+        "base_mana": 45,
+        "base_max_mana": 45,
+        "base_strength": 12,
+        "base_intelligence": 11,
+        "base_agility": 14
+      }
+    }
+  ]
+  

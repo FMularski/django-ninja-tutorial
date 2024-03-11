@@ -1,0 +1,147 @@
+[
+    {
+      "model": "rpg.character",
+      "pk": 1,
+      "fields": {
+        "name": "Eldrin",
+        "character_class": 1,
+        "statistics": 1,
+        "guild": 1,
+        "gold": 200,
+        "quests": [1, 2]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 2,
+      "fields": {
+        "name": "Mira",
+        "character_class": 2,
+        "statistics": 2,
+        "guild": 1,
+        "gold": 300,
+        "quests": [2, 3]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 3,
+      "fields": {
+        "name": "Thorn",
+        "character_class": 3,
+        "statistics": 3,
+        "guild": 2,
+        "gold": 250,
+        "quests": [4]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 4,
+      "fields": {
+        "name": "Lyra",
+        "character_class": 4,
+        "statistics": 4,
+        "guild": 2,
+        "gold": 500,
+        "quests": [1, 5]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 5,
+      "fields": {
+        "name": "Garrick",
+        "character_class": 5,
+        "statistics": 5,
+        "guild": 3,
+        "gold": 350,
+        "quests": [2, 6]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 6,
+      "fields": {
+        "name": "Fenris",
+        "character_class": 6,
+        "statistics": 6,
+        "guild": 3,
+        "gold": 400,
+        "quests": [3, 7]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 7,
+      "fields": {
+        "name": "Aeliana",
+        "character_class": 1,
+        "statistics": 7,
+        "guild": 4,
+        "gold": 450,
+        "quests": [4, 8]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 8,
+      "fields": {
+        "name": "Darius",
+        "character_class": 2,
+        "statistics": 8,
+        "guild": 4,
+        "gold": 275,
+        "quests": [5, 9]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 9,
+      "fields": {
+        "name": "Helena",
+        "character_class": 3,
+        "statistics": 9,
+        "guild": 1,
+        "gold": 225,
+        "quests": [6, 10]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 10,
+      "fields": {
+        "name": "Ivor",
+        "character_class": 3,
+        "statistics": 10,
+        "guild": 2,
+        "gold": 325,
+        "quests": [7, 11]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 11,
+      "fields": {
+        "name": "Kael",
+        "character_class": 5,
+        "statistics": 11,
+        "guild": 2,
+        "gold": 375,
+        "quests": [8, 12]
+      }
+    },
+    {
+      "model": "rpg.character",
+      "pk": 12,
+      "fields": {
+        "name": "Lorien",
+        "character_class": 6,
+        "statistics": 12,
+        "guild": 4,
+        "gold": 425,
+        "quests": [9, 1]
+      }
+    }
+  ]
+  

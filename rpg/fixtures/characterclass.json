@@ -1,0 +1,51 @@
+[
+    {
+      "model": "rpg.characterclass",
+      "pk": 1,
+      "fields": {
+        "name": "Warrior",
+        "description": "A brave fighter with unmatched strength and prowess in melee combat."
+      }
+    },
+    {
+      "model": "rpg.characterclass",
+      "pk": 2,
+      "fields": {
+        "name": "Mage",
+        "description": "A master of the arcane arts, capable of casting powerful spells."
+      }
+    },
+    {
+      "model": "rpg.characterclass",
+      "pk": 3,
+      "fields": {
+        "name": "Rogue",
+        "description": "A stealthy trickster, skilled in agility and surprise attacks."
+      }
+    },
+    {
+      "model": "rpg.characterclass",
+      "pk": 4,
+      "fields": {
+        "name": "Priest",
+        "description": "A devoted healer, wielding divine powers to mend wounds and cure ailments."
+      }
+    },
+    {
+      "model": "rpg.characterclass",
+      "pk": 5,
+      "fields": {
+        "name": "Ranger",
+        "description": "A marksman unmatched in ranged combat, often accompanied by a loyal animal companion."
+      }
+    },
+    {
+      "model": "rpg.characterclass",
+      "pk": 6,
+      "fields": {
+        "name": "Paladin",
+        "description": "A holy warrior, blending melee combat with divine magic to smite foes."
+      }
+    }
+  ]
+  

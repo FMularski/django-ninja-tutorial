@@ -1,0 +1,99 @@
+[
+    {
+      "model": "rpg.quest",
+      "pk": 1,
+      "fields": {
+        "title": "The Lost Sword of Elendil",
+        "description": "Retrieve the legendary sword lost in the depths of the Shadow Forest."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 2,
+      "fields": {
+        "title": "A Potion of Shadows",
+        "description": "Gather rare ingredients to brew a potion that grants invisibility."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 3,
+      "fields": {
+        "title": "The Dragon's Lair",
+        "description": "Venture into the lair of the ancient dragon, Smaug, and retrieve its hoarded treasure."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 4,
+      "fields": {
+        "title": "Rescue the Prince",
+        "description": "The prince has been kidnapped by the goblin king. Infiltrate their stronghold and rescue him."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 5,
+      "fields": {
+        "title": "The Siege of Castle Black",
+        "description": "Defend Castle Black from the onslaught of the undead army."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 6,
+      "fields": {
+        "title": "The Forgotten Tome",
+        "description": "Locate and retrieve a powerful tome of magic, lost for centuries in the ruins of Old Valyria."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 7,
+      "fields": {
+        "title": "The Enchanted Forest",
+        "description": "Explore the depths of the Enchanted Forest to find the lost artifact of Eldoria."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 8,
+      "fields": {
+        "title": "Guardian of the Mountains",
+        "description": "Defeat the ancient Guardian that resides in the peaks of the Misty Mountains."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 9,
+      "fields": {
+        "title": "Secrets of the Underworld",
+        "description": "Venture into the underworld to uncover the secrets of the dark realm."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 10,
+      "fields": {
+        "title": "The Lost Kingdom",
+        "description": "Discover the ruins of the Lost Kingdom and reclaim the treasures that were left behind."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 11,
+      "fields": {
+        "title": "The Crystal Caves",
+        "description": "Navigate through the Crystal Caves to find the source of the mysterious lights."
+      }
+    },
+    {
+      "model": "rpg.quest",
+      "pk": 12,
+      "fields": {
+        "title": "The Dragon's Lair",
+        "description": "Embark on a perilous journey to slay the dragon that has terrorized the village."
+      }
+    }
+  ]
+  
