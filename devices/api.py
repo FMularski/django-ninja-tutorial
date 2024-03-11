@@ -36,3 +36,22 @@ def post_device(request, device: DeviceWriteSchema):
     device_data = device.model_dump()
 
     return HTTPStatus.CREATED, Device.objects.create(**device_data)
+
+
+@api.put(
+    "devices/{slug}/", response={HTTPStatus.OK: DeviceSchema, HTTPStatus.NOT_FOUND: ErrorSchema}
+)
+def put_device(request, slug: str, device: DeviceWriteSchema):
+    existing_device = get_object_or_404(Device, slug=slug)
+
+    if device.location_id:
+        location_exists = Location.objects.filter(pk=device.location_id).exists()
+        if not location_exists:
+            return HTTPStatus.NOT_FOUND, {"message": "Location not found."}
+
+    device_data = device.model_dump()
+    existing_device.name = device_data.get("name")
+    existing_device.location_id = device_data.get("location_id")
+    existing_device.save()
+
+    return existing_device
