@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "core",
     "devices",
     "rpg",
     "django_extensions",
+    "knox",
 ]
 
 MIDDLEWARE = [

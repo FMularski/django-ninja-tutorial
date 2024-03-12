@@ -8,7 +8,7 @@ from rpg.auth import ApiKey
 from rpg.models import CharacterClass
 from rpg.schemas import CharacterClassReadSchema, CharacterClassWriteSchema
 
-router = Router(auth=ApiKey(), tags=["character classes"])
+router = Router(auth=ApiKey(), tags=["Character classes"])
 
 
 @router.get("", response={HTTPStatus.OK: list[CharacterClassReadSchema]})
