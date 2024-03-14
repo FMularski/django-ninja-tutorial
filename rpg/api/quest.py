@@ -4,11 +4,10 @@ from django.shortcuts import get_object_or_404
 from ninja import Router
 from ninja.pagination import PageNumberPagination, paginate
 
-from rpg.auth import ApiKey
 from rpg.models import Quest
 from rpg.schemas import QuestReadSchema, QuestWriteSchema
 
-router = Router(auth=ApiKey(), tags=["Quests"])
+router = Router(tags=["Quests"])
 
 
 @router.get("", response={HTTPStatus.OK: list[QuestReadSchema]})

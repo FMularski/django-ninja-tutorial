@@ -4,11 +4,10 @@ from django.shortcuts import get_object_or_404
 from ninja import Router
 from ninja.pagination import PageNumberPagination, paginate
 
-from rpg.auth import ApiKey
 from rpg.models import CharacterClass
 from rpg.schemas import CharacterClassReadSchema, CharacterClassWriteSchema
 
-router = Router(auth=ApiKey(), tags=["Character classes"])
+router = Router(tags=["Character classes"])
 
 
 @router.get("", response={HTTPStatus.OK: list[CharacterClassReadSchema]})

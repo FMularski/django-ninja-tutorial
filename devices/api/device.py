@@ -1,32 +1,25 @@
 from http import HTTPStatus
 
 from django.shortcuts import get_object_or_404
-from ninja import NinjaAPI
+from ninja import Router
 
 from devices.models import Device, Location
-from devices.schemas import DeviceSchema, DeviceWriteSchema, ErrorSchema, LocationSchema
+from devices.schemas import DeviceSchema, DeviceWriteSchema, ErrorSchema
 
-api = NinjaAPI()
-
-
-@api.get("locations/", response=list[LocationSchema])
-def get_devices(request):
-    return Location.objects.all()
+router = Router(tags=["Devices"])
 
 
-@api.get("devices/", response=list[DeviceSchema])
+@router.get("", response=list[DeviceSchema])
 def get_devices(request):
     return Device.objects.all()
 
 
-@api.get("devices/{slug}/", response=DeviceSchema)
+@router.get("{slug}/", response=DeviceSchema)
 def get_device(request, slug: str):
     return get_object_or_404(Device, slug=slug)
 
 
-@api.post(
-    "devices/", response={HTTPStatus.CREATED: DeviceSchema, HTTPStatus.NOT_FOUND: ErrorSchema}
-)
+@router.post("", response={HTTPStatus.CREATED: DeviceSchema, HTTPStatus.NOT_FOUND: ErrorSchema})
 def post_device(request, device: DeviceWriteSchema):
     if device.location_id:
         location_exists = Location.objects.filter(pk=device.location_id).exists()
@@ -38,9 +31,7 @@ def post_device(request, device: DeviceWriteSchema):
     return HTTPStatus.CREATED, Device.objects.create(**device_data)
 
 
-@api.put(
-    "devices/{slug}/", response={HTTPStatus.OK: DeviceSchema, HTTPStatus.NOT_FOUND: ErrorSchema}
-)
+@router.put("{slug}/", response={HTTPStatus.OK: DeviceSchema, HTTPStatus.NOT_FOUND: ErrorSchema})
 def put_device(request, slug: str, device: DeviceWriteSchema):
     existing_device = get_object_or_404(Device, slug=slug)
 

@@ -17,13 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from core.api import api as core_api
-from devices.api import api as devices_api
-from rpg.api import api as rpg_api
+from devices_backend.api import api
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("core/", core_api.urls),
-    path("api/", devices_api.urls),
-    path("rpg/", rpg_api.urls),
+    path("api/", api.urls),
 ]

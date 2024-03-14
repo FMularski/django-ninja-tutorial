@@ -1,12 +1,7 @@
 from ninja import ModelSchema, Schema
 
 from devices import models
-
-
-class LocationSchema(ModelSchema):
-    class Meta:
-        model = models.Location
-        fields = ("id", "name")
+from devices.schemas.location import LocationSchema
 
 
 class DeviceSchema(ModelSchema):
@@ -20,7 +15,3 @@ class DeviceSchema(ModelSchema):
 class DeviceWriteSchema(Schema):
     name: str
     location_id: int | None = None
-
-
-class ErrorSchema(Schema):
-    message: str

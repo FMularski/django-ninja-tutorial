@@ -1,5 +1,13 @@
 from knox.auth import TokenAuthentication as KnoxTokenAuthentication
-from ninja.security import HttpBearer
+from ninja.security import APIKeyHeader, HttpBearer
+
+
+class ApiKeyAuth(APIKeyHeader):
+    param_name = "X-API-Key"
+
+    def authenticate(self, request, key):
+        if key == "classified":
+            return key
 
 
 class KnoxAuth(HttpBearer):

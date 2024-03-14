@@ -3,11 +3,10 @@ from http import HTTPStatus
 from django.shortcuts import get_object_or_404
 from ninja import Query, Router
 
-from core.auth import KnoxAuth
 from rpg.models import Rarity
 from rpg.schemas import RarityFilterSchema, RarityReadSchema, RarityWriteSchema
 
-router = Router(auth=KnoxAuth(), tags=["Rarities"])
+router = Router(tags=["Rarities"])
 
 
 @router.get("", response={HTTPStatus.OK: list[RarityReadSchema]})
