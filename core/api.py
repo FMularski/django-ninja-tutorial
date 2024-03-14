@@ -22,4 +22,4 @@ def login(request, credentials: LoginCredentialsSchema):
         _, token = AuthToken.objects.create(user)
         return HTTPStatus.OK, {"token": token}
 
-    return HTTPStatus.UNAUTHORIZED, "Authentication failed."
+    return HTTPStatus.UNAUTHORIZED, {"message": "Authentication failed."}
