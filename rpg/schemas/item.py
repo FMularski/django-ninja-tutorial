@@ -1,5 +1,5 @@
 from django.db.models import Q
-from ninja import Field, FilterSchema, ModelSchema
+from ninja import Field, FilterSchema, ModelSchema, Schema
 
 from core.schemas import OrderSchema
 from rpg import models
@@ -30,3 +30,18 @@ class ItemFilterSchema(FilterSchema):
 
 class ItemOrderSchema(OrderSchema):
     pass
+
+
+class ItemWriteSchema(Schema):
+    name: str
+    rarity_id: int
+    boosted_stat: str
+    value: int
+    character_id: int
+
+    class Meta:
+        model = models.Item
+        exclude = (
+            "id",
+            "icon",
+        )  # icon must be handled separately
