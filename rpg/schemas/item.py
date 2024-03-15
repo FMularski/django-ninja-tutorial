@@ -7,9 +7,37 @@ from rpg import models
 
 
 class ItemReadSchema(ModelSchema):
+    recommended: str
+
     class Meta:
         model = models.Item
         fields = "__all__"
+
+    @staticmethod
+    def resolve_recommended(obj, context):
+        """
+        * resolver is the equivalent of SerializerMethodField
+        * context can be accessed here
+        * serializing object outside request and passing custom context:
+            DRF:
+            serializer = SerializerClass(instance, context={...})
+            serializer.data
+
+            django-ninja:
+            schema = SchemaClass.from_orm(instance, context={...})
+            schema.dict()
+        """
+        auth = context["request"].auth
+
+        recommended = ""
+        if obj.boosted_stat in ["health", "strength"]:
+            recommended = "melee"
+        elif obj.boosted_stat in ["mana", "intelligence"]:
+            recommended = "magic"
+        else:
+            recommended = "rogue"
+
+        return f"{auth} - {recommended}"
 
 
 class ItemFilterSchema(FilterSchema):
