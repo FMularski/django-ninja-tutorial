@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "rpg",
     "django_extensions",
     "knox",
+    "colorfield",
 ]
 
 MIDDLEWARE = [

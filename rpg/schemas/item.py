@@ -35,7 +35,7 @@ class ItemOrderSchema(OrderSchema):
 
 class ItemWriteSchema(Schema):
     name: str
-    rarity_id: int
+    rarity: str
     boosted_stat: str
     value: int = Field(gt=0)
     character_id: int
@@ -47,12 +47,15 @@ class ItemWriteSchema(Schema):
             "icon",
         )  # icon must be handled separately
 
-    @validator("rarity_id")
-    def check_if_rarity_exists(cls, rarity_id: int):
-        if not models.Rarity.objects.filter(pk=rarity_id).exists():
+    @validator("rarity")
+    def check_if_rarity_exists(cls, rarity: str):
+        # input: rarity name (str)
+        # output: rarity object
+        rarity_obj = models.Rarity.objects.filter(name__iexact=rarity).first()
+        if not rarity_obj:
             raise ValueError("Invalid rarity.")
 
-        return rarity_id
+        return rarity_obj
 
     @validator("boosted_stat")
     def check_boosted_stat(cls, boosted_stat: str):
