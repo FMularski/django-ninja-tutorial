@@ -1,6 +1,7 @@
 from django.db.models import Q
 from ninja import Field, FilterSchema, ModelSchema
 
+from core.schemas import OrderSchema
 from rpg import models
 
 
@@ -25,3 +26,7 @@ class ItemFilterSchema(FilterSchema):
     # filter items recommeded for magic classes
     def filter_magic(self, magic: bool):
         return Q(boosted_stat__in=["intelligence", "mana"]) if magic else Q()
+
+
+class ItemOrderSchema(OrderSchema):
+    pass
