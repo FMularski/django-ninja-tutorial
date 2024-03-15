@@ -1,5 +1,6 @@
 from django.db.models import Q
 from ninja import Field, FilterSchema, ModelSchema, Schema
+from pydantic import validator
 
 from core.schemas import OrderSchema
 from rpg import models
@@ -36,7 +37,7 @@ class ItemWriteSchema(Schema):
     name: str
     rarity_id: int
     boosted_stat: str
-    value: int
+    value: int = Field(gt=0)
     character_id: int
 
     class Meta:
@@ -45,3 +46,25 @@ class ItemWriteSchema(Schema):
             "id",
             "icon",
         )  # icon must be handled separately
+
+    @validator("rarity_id")
+    def check_if_rarity_exists(cls, rarity_id: int):
+        if not models.Rarity.objects.filter(pk=rarity_id).exists():
+            raise ValueError("Invalid rarity.")
+
+        return rarity_id
+
+    @validator("boosted_stat")
+    def check_boosted_stat(cls, boosted_stat: str):
+        available_stats = ["health", "mana", "strength", "intelligence", "agility"]
+        if boosted_stat not in available_stats:
+            raise ValueError(f"Invalid boosted stat, choices are: {', '.join(available_stats)}.")
+
+        return boosted_stat
+
+    @validator("character_id")
+    def check_if_character_exists(cls, character_id: int):
+        if not models.Character.objects.filter(pk=character_id).exists():
+            raise ValueError("Invalid character.")
+
+        return character_id
