@@ -30,3 +30,18 @@ def get_item(request, pk: int):
 def post_item(request, item: ItemWriteSchema, icon: UploadedFile = File(None)):
     item_data = item.model_dump()
     return Item.objects.create(**item_data, icon=icon)
+
+
+@router.api_operation(["PUT", "PATCH"], "{pk}/", response={HTTPStatus.OK: ItemReadSchema})
+def update_item(request, pk: int, item: ItemWriteSchema, icon: UploadedFile = File(None)):
+    existing_item = get_object_or_404(Item, pk=pk)
+    item_data = item.model_dump()
+
+    for k, v in item_data.items():
+        setattr(existing_item, k, v)
+    
+    if icon:
+        existing_item.icon = icon
+
+    existing_item.save()
+    return existing_item

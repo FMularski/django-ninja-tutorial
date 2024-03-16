@@ -54,6 +54,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "ninja_put_patch_file_upload_middleware.middlewares.process_put_patch",  # required for PUT/PATCH file + json body to work 
 ]
 
 CSRF_TRUSTED_ORIGINS = ["http://localhost:8000"]
