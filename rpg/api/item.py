@@ -45,3 +45,11 @@ def update_item(request, pk: int, item: ItemWriteSchema, icon: UploadedFile = Fi
 
     existing_item.save()
     return existing_item
+
+
+@router.delete("{pk}/", response={HTTPStatus.NO_CONTENT: None})
+def delete_item(request, pk: int):
+    existing_item = get_object_or_404(Item, pk=pk)
+    existing_item.delete()
+
+    return HTTPStatus.NO_CONTENT, None
