@@ -7,6 +7,7 @@ from rpg import models
 from .characterclass import CharacterClassReadSchema
 from .guild import GuildReadSchema
 from .quest import QuestReadSchema
+from .statistics import StatisticsReadSchema
 
 
 class ExperienceSchema(Schema):
@@ -24,8 +25,7 @@ class CharacterReadSchema(ModelSchema):
     quests: list[QuestReadSchema]
     guild: GuildReadSchema
     experience: ExperienceSchema
-    # TODO:
-    # statistics = schemas.StatisticsReadSchema
+    statistics: StatisticsReadSchema
 
     class Meta:
         model = models.Character
