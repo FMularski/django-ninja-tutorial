@@ -1,12 +1,16 @@
-from ninja import ModelSchema, FilterSchema, Field
-from rpg import models, schemas
-from core.schemas import OrderSchema
 from django.db.models import Q
+from ninja import Field, FilterSchema, ModelSchema
+
+from core.schemas import OrderSchema
+from rpg import models
+
+from .characterclass import CharacterClassReadSchema
+from .quest import QuestReadSchema
 
 
 class CharacterReadSchema(ModelSchema):
-    character_class: schemas.CharacterClassReadSchema
-    quests: list[schemas.QuestReadSchema]
+    character_class: CharacterClassReadSchema
+    quests: list[QuestReadSchema]
     # TODO:
     # guild = schemas.GuildReadSchema
     # statistics = schemas.StatisticsReadSchema
@@ -29,6 +33,6 @@ class CharacterFilterSchema(FilterSchema):
 
     def filter_gold(self, gold):
         return Q(gold__gte=gold) if gold else Q()
-    
+
     def filter_level(self, level):
         return Q(level__gte=level) if level else Q()
