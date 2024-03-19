@@ -24,7 +24,7 @@ def get_characters(
     filtered = filters.filter(characters)
     ordered = ordering.order(filtered)
 
-    return HTTPStatus.OK, ordered
+    return ordered  # NOTE: returning HTTPStatus.OK, ordered gives 500, don't know why
 
 
 @router.get("{pk}/", response={HTTPStatus.OK: CharacterReadSchema})
