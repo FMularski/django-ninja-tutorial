@@ -7,7 +7,7 @@ from rpg import models
 from .characterclass import CharacterClassReadSchema
 from .guild import GuildReadSchema
 from .quest import QuestReadSchema
-from .statistics import StatisticsReadSchema
+from .statistics import StatisticsReadSchema, StatisticsWriteSchema
 
 
 class ExperienceSchema(Schema):
@@ -61,3 +61,16 @@ class CharacterFilterSchema(FilterSchema):
 
     def filter_level(self, level):
         return Q(level__gte=level) if level else Q()
+
+
+class CharacterWriteSchema(ModelSchema):
+    statistics: StatisticsWriteSchema
+
+    class Meta:
+        model = models.Character
+        fields = (
+            "name",
+            "character_class",
+            "guild",
+            "statistics",
+        )
